@@ -12,6 +12,9 @@ settings = dict(zip(settings_df["setting"].astype(str), settings_df["value"].ast
 display_mode = settings.get("display_mode", "activation")
 selected_function = settings.get("selected_function", "relu")
 temperature = float(settings.get("temperature", 1.0))
+target_class = settings.get("target_class", str(softmax_input_df["class_name"].iloc[0]))
+if temperature <= 0:
+    raise ValueError("temperature は0より大きい値にしてください")
 
 x = activation_input_df["input_value"].to_numpy(dtype=float)
 sigmoid = 1.0 / (1.0 + np.exp(-x))
@@ -57,16 +60,33 @@ softmax_df["exp_shifted"] = np.round(exp_shifted, 4)
 softmax_df["probability"] = np.round(probability, 4)
 softmax_df["rank"] = softmax_df["probability"].rank(ascending=False, method="dense").astype(int)
 
+target = (softmax_input_df["class_name"].astype(str) == target_class).astype(float).to_numpy()
+if target.sum() != 1:
+    raise ValueError("target_class はSoftmax用logit表のclass_nameから1つ選んでください")
+
+softmax_ce_grad_df = softmax_df[["class_name", "logit", "probability"]].copy()
+softmax_ce_grad_df["target_class"] = target_class
+softmax_ce_grad_df["target"] = target.astype(int)
+softmax_ce_grad_df["dLoss_dlogit"] = np.round(probability - target, 4)
+softmax_ce_grad_df["read_as"] = np.where(
+    softmax_ce_grad_df["target"] == 1,
+    "正解クラスは probability - 1",
+    "不正解クラスは probability",
+)
+
 e_exam_point_df = pd.DataFrame(
     [
         {"point": "nonlinearity", "read_as": "線形変換のscoreをそのまま渡さず、非線形に変える"},
         {"point": "gradient", "read_as": "入力が大きすぎるとSigmoidやtanhの勾配が小さくなる"},
         {"point": "relu", "read_as": "0以下は0、0より大きい値はそのまま通す"},
         {"point": "softmax", "read_as": "複数logitを合計1の確率のような値に変える"},
+        {"point": "softmax_ce_grad", "read_as": "SoftmaxとCross Entropyを合わせるとp-yになる"},
     ]
 )
 
-if display_mode == "softmax":
+if display_mode == "softmax_ce_grad":
+    result_df = softmax_ce_grad_df
+elif display_mode == "softmax":
     result_df = softmax_df
 elif display_mode == "gradient":
     result_df = gradient_df

@@ -9,7 +9,6 @@
 - `excel_linear_transform_demo.xlsx`
 - `excel_linear_transform_demo_code.py`
 - `excel_linear_transform_slides.pptx`
-- `excel_linear_transform_operation_explainer.pptx` - デモ操作解説スライド
 - `README.md`
 
 ## 使い方
@@ -41,7 +40,4 @@
 ## 注意
 
 この教材は、線形変換の計算を小さな表で確認するための補助教材です。
-
-
-
 
