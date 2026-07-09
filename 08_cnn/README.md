@@ -10,6 +10,7 @@
 - `excel_cnn_demo.xlsx`
 - `excel_cnn_demo_code.py`
 - `excel_cnn_slides.pptx`
+- `excel_cnn_operation_explainer.pptx` - デモ操作解説スライド
 - `README.md`
 
 ## 使い方
@@ -32,4 +33,7 @@
 ## 注意
 
 この教材は、計算の流れを小さな表で確認するための補助教材です。
+
+
+
 
