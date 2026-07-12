@@ -10,6 +10,7 @@
 - `excel_optimizers_demo.xlsx`
 - `excel_optimizers_demo_code.py`
 - `excel_optimizers_slides.pptx`
+- `excel_optimizers_operation_explainer.pptx`
 - `README.md`
 
 ## 使い方

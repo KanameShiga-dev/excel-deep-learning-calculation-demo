@@ -10,6 +10,7 @@
 - `excel_rnn_lstm_demo.xlsx`
 - `excel_rnn_lstm_demo_code.py`
 - `excel_rnn_lstm_slides.pptx`
+- `excel_rnn_lstm_operation_explainer.pptx`
 - `README.md`
 
 ## 使い方

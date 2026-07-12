@@ -10,6 +10,7 @@
 - `excel_activation_functions_demo.xlsx`
 - `excel_activation_functions_demo_code.py`
 - `excel_activation_functions_slides.pptx`
+- `excel_activation_functions_operation_explainer.pptx`
 - `README.md`
 
 ## 使い方

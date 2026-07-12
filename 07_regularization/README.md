@@ -10,6 +10,7 @@
 - `excel_regularization_demo.xlsx`
 - `excel_regularization_demo_code.py`
 - `excel_regularization_slides.pptx`
+- `excel_regularization_operation_explainer.pptx`
 - `README.md`
 
 ## 使い方

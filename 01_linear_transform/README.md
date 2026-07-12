@@ -9,6 +9,7 @@
 - `excel_linear_transform_demo.xlsx`
 - `excel_linear_transform_demo_code.py`
 - `excel_linear_transform_slides.pptx`
+- `excel_linear_transform_operation_explainer.pptx`
 - `README.md`
 
 ## 使い方

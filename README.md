@@ -30,6 +30,7 @@ GitHub公開対象は各回ごとに最小セットのみとします。
 - `excel_<theme>_demo.xlsx`
 - `excel_<theme>_demo_code.py`
 - `excel_<theme>_slides.pptx`
+- `excel_<theme>_operation_explainer.pptx`
 - `README.md`
 
 公開対象に含めないもの:

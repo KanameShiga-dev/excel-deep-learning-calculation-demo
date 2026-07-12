@@ -10,6 +10,7 @@
 - `excel_gradient_descent_demo.xlsx`
 - `excel_gradient_descent_demo_code.py`
 - `excel_gradient_descent_slides.pptx`
+- `excel_gradient_descent_operation_explainer.pptx`
 - `README.md`
 
 ## 使い方

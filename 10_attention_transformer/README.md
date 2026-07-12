@@ -10,6 +10,7 @@ Q/K/V、score、Softmax、Attention weight、contextを確認します。どのK
 - `excel_attention_transformer_demo.xlsx`
 - `excel_attention_transformer_demo_code.py`
 - `excel_attention_transformer_slides.pptx`
+- `excel_attention_transformer_operation_explainer.pptx`
 - `README.md`
 
 ## 使い方

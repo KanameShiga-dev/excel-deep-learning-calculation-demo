@@ -10,6 +10,7 @@
 - `excel_loss_functions_demo.xlsx`
 - `excel_loss_functions_demo_code.py`
 - `excel_loss_functions_slides.pptx`
+- `excel_loss_functions_operation_explainer.pptx`
 - `README.md`
 
 ## 使い方

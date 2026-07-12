@@ -10,6 +10,7 @@
 - `excel_cnn_demo.xlsx`
 - `excel_cnn_demo_code.py`
 - `excel_cnn_slides.pptx`
+- `excel_cnn_operation_explainer.pptx`
 - `README.md`
 
 ## 使い方
